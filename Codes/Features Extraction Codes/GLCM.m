@@ -1,5 +1,5 @@
 %%Extracting GLCM Features from the Images 
-for Idx = 1:152
+for Idx = 1:n        %Replace n with the number of images in the dataset
        
         glcms = graycomatrix(adhist);
         R=0;
