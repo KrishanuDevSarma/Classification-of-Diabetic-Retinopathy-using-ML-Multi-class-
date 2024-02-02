@@ -1,25 +1,5 @@
-clc;
-clear all;
-close all;
-
-%Accessing the Diabetic Retinopathy Fundus Image Dataset STARE
-
-imdsT = imageDatastore('G:\Project Stage-II\stare\Raw','IncludeSubfolders',true,'FileExtensions',[".png"],'LabelSource', 'foldernames')
-T = countEachLabel(imdsT);
-df=[];
-
-for Idx =1:152
+for Idx =1:n      %Replace n with the number of images in the dataset
     
-        im = readimage(imdsT,Idx);
-
-        %Green Channel extraction
-        green = im(:,:,2);
- 
-        %Applying CLAHE(Contrast Limited Adaptive Histogram)           
-
-        adhist = double(adapthisteq(green,'clipLimit',0.02,'Distribution','uniform'));
-    
-       
         %%Extracting GLRLM Features from the Images
         img = imresize(adhist,[256 256]);
         
