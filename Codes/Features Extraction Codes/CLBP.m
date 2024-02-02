@@ -9,6 +9,8 @@ G=im(:,:,2);
 
 A=adapthisteq(G);
 
+%% ******************Extracting the CLBP Features***************************
+
 [rows, columns ] = size(A);
 Pattern_Im = zeros(rows-2,columns-2);
 for row = 2 : rows - 1
