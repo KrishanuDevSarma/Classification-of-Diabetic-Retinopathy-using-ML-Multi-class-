@@ -1,5 +1,7 @@
 %%Extracting LBP Features from the Images
 
+for Idx = 1:n 	%Replace n with the number of images in the dataset
+
         img = adhist;
         rows=size(adhist,1);
         cols=size(adhist,2);
