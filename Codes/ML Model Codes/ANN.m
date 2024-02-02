@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 %rng(1);
-SD1=importdata('G:\Project Stage-II\stare\Features\CSLBP_features.mat');
+SD1=importdata('features.mat');  %Replace 'features.mat' with the extracted feature set as required
 SD = SD1;
 SL=[zeros(1,47),ones(1,66),2*ones(1,39)]';
  
