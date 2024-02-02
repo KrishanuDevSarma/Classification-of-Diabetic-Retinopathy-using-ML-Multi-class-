@@ -1,13 +1,4 @@
-clc;
-clear all;
-close all;
-
-%Accessing the Diabetic Retinopathy Fundus Image Dataset STARE
-
-imdsT = imageDatastore('G:\Project Stage-II\stare\Raw','IncludeSubfolders',true,'FileExtensions',[".png"],'LabelSource', 'foldernames')
-T = countEachLabel(imdsT);
-
-for Idx = 1:152
+for Idx = 1:n 	%Replace n with the number of images in the dataset
     
         %**********************Preprocessing****************************
 
