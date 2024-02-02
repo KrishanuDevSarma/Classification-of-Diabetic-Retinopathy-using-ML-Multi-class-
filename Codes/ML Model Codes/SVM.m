@@ -5,7 +5,7 @@ close all;
 t=templateSVM('KernelFunction', 'linear');
 %rng(1);
 %Storing the Sorted Feature Database
-SD1=importdata('G:\Project Stage-II\stare\Features\LBP_features.mat')';
+SD1=importdata('features.mat')';      %Replace 'features.mat' with the required feature set
 SD=zscore(SD1');
 
 %Labelling the Sorted Feature Database
