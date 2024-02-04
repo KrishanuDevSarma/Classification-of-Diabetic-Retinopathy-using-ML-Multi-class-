@@ -1,6 +1,6 @@
 for Idx = 1:n 	%Replace n with the number of images in the dataset
     
-        %**********************Preprocessing****************************
+        %**********************Preprocessing*****************************
 
 	%Storing the Image in a variable
         im = readimage(imdsT,Idx);
